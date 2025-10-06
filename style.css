@@ -504,8 +504,16 @@ body {
 
 /* Responsividade */
 @media (max-width: 480px) {
+    body {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    }
+    
     .container {
         padding: 15px;
+        background: rgba(10, 10, 10, 0.8);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .logo-image {
@@ -515,11 +523,16 @@ body {
     .welcome-text {
         font-size: 1rem;
         padding: 15px;
+        background: rgba(26, 26, 46, 0.6);
+        border-radius: 10px;
+        border: 1px solid rgba(0, 255, 255, 0.2);
     }
     
     .link-button {
         padding: 15px 20px;
         font-size: 1rem;
+        background: rgba(20, 20, 40, 0.9) !important;
+        border: 2px solid rgba(255, 255, 255, 0.2) !important;
     }
     
     .button-content i {
@@ -528,6 +541,16 @@ body {
     
     .video-container {
         height: 200px;
+        background: rgba(10, 10, 10, 0.9);
+        border: 2px solid rgba(0, 255, 255, 0.3);
+        border-radius: 15px;
+    }
+    
+    .footer {
+        background: rgba(26, 26, 46, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
