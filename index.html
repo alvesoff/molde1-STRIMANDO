@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer Links - Linktree</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header com Logo -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="6925e7e2-75d9-4a34-ae78-b872052bf07f.png" alt="STRIMANDO Logo" class="logo-image">
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção de Boas-vindas -->
+        <section class="welcome-section">
+            <p class="welcome-text">
+                Bem-vindo ao meu espaço! Aqui você encontra todos os meus links importantes. 
+                Sinta-se à vontade para se conectar!
+            </p>
+        </section>
+
+        <!-- Live Player Section -->
+        <section class="live-section">
+            <div class="live-container">
+                <div class="live-status" id="liveStatus">
+                    <span class="live-indicator"></span>
+                    <span class="status-text">VERIFICANDO STATUS...</span>
+                </div>
+                <div class="video-container" id="videoContainer">
+                    <iframe id="livePlayer" 
+                            src="" 
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+                    <div class="video-overlay" id="videoOverlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section class="links-section">
+            <!-- Botão principal para mostrar redes sociais -->
+            <div class="main-button-container">
+                <button class="main-social-button" id="toggleSocialButton">
+                    <div class="button-content">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Acessar Redes Sociais</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+
+            <!-- Grid de links (inicialmente oculto) -->
+            <div class="links-grid" id="socialLinksGrid" style="display: none;">
+                <!-- Twitch -->
+                <a href="#" class="link-button twitch" data-platform="twitch">
+                    <div class="button-content">
+                        <i class="fab fa-twitch"></i>
+                        <span>Twitch</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- Kick -->
+                <a href="#" class="link-button kick" data-platform="kick">
+                    <div class="button-content">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Kick</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- Live Pix -->
+                <a href="#" class="link-button pix" data-platform="pix">
+                    <div class="button-content">
+                        <i class="fas fa-coins"></i>
+                        <span>LIVE PIX</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- Twitter/X -->
+                <a href="#" class="link-button twitter" data-platform="twitter">
+                    <div class="button-content">
+                        <i class="fab fa-twitter"></i>
+                        <span>X (Twitter)</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#" class="link-button instagram" data-platform="instagram">
+                    <div class="button-content">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="#" class="link-button youtube" data-platform="youtube">
+                    <div class="button-content">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- TikTok -->
+                <a href="#" class="link-button tiktok" data-platform="tiktok">
+                    <div class="button-content">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+
+                <!-- Discord -->
+                <a href="#" class="link-button discord" data-platform="discord">
+                    <div class="button-content">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </div>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
